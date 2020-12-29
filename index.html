@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WebDom.cz</title>
+		<link rel="shortcut icon" href="/assets/favicon/icons8-website-32.png" type="image/x-icon" />
+		<link rel="stylesheet" href="/assets/css/index.css" />
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+			integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="/assets/js/wavify.js"></script>
+		<script src="/assets/js/jquery.wavify.js"></script>
+	</head>
+	<body>
+		<nav>
+			<div class="flex_container">
+				<a id="logo" href="">WebDom</a>
+				<div class="burger_div">
+					<div class="burger">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+					</div>
+				</div>
+				<div class="nav_items closeClick">
+					<ul class="nav_items">
+						<li><a class="active" href="#domu">Domů</a></li>
+						<li><a href="#o-mne">O mně</a></li>
+						<li><a href="#sluzby">Služby</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#kontakt">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="submenu closeClick">
+				<ul class="submenu_nav_items">
+					<li><a href="#domu">Domů</a></li>
+					<li><a href="#o-mne">O mně</a></li>
+					<li><a href="#sluzby">Služby</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="closeClick">
+			<section id="domu">
+				<div id="overlay">
+					<div id="introduction_text">
+						<h2>Vítejte</h2>
+						<h1>
+							JSEM <span class="txt_type" data-wait="3000" data-words='[ "Web Developer.", "Designer.", "Freelancer.", "Dominik Richter." ]'> </span> <span class="custom_cursor"></span>
+						</h1>
+						<p>Sugar plum tootsie roll muffin marshmallow apple pie chupa chups. Sugar plum tootsie roll muffin.</p>
+						<a href="#o-mne"
+							><div class="mouse"><div class="mouse_line"></div></div
+						></a>
+					</div>
+				</div>
+				<svg class="hidden_svg" width="100%" height="15%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<defs></defs>
+					<path id="myID" d="" />
+				</svg>
+			</section>
+
+			<section id="o-mne">
+				<img src="/assets/images/pose.JPG" alt="Dominik Richter" class="about_pic" />
+				<div class="about_content">
+					<h2><span>Něco</span> o mně</h2>
+					<h3>Ahoj!<span> Jsem Dominik Richter</span></h3>
+					<p>Sugar plum tootsie roll muffin marshmallow apple pie chupa chups. Tart candy macaroon sugar plum candy canes chocolate bar toffee.</p>
+					<br />
+					<p>Sesame snaps pie icing candy canes jelly marshmallow topping. Jelly beans cookie danish</p>
+					<br />
+					<p>Jelly-o jelly chocolate cake jelly beans pudding gummi bears tootsie roll liquorice liquorice. Pudding bonbon jelly beans caramels.</p>
+				</div>
+			</section>
+
+			<section id="sluzby">
+				<h2><span>Služby</span></h2>
+				<div class="sluzby_container">
+					<div class="sluzby_card">
+						<img src="/assets/images/icons8-web-design-64.png" alt="" srcset="" />
+						<h4>UX/UI design</h4>
+						<p>Sugar plum tootsie roll muffin marshmallow apple</p>
+					</div>
+					<div class="sluzby_card">
+						<img src="/assets/images/icons8-web-64.png" alt="" srcset="" />
+						<h4>Web development</h4>
+						<p>Sugar plum tootsie roll muffin marshmallow apple</p>
+					</div>
+					<div class="sluzby_card">
+						<img src="/assets/images/icons8-google-mobile-64.png" alt="" srcset="" />
+						<h4>Responzivita</h4>
+						<p>Ta už je u moderních webů samozřejmostí</p>
+					</div>
+				</div>
+			</section>
+			<section id="portfolio">
+				<h2><span>Portfolio</span></h2>
+				<div class="portfolio_container" target="_blank">
+					<a class="portfolio_card" href="https://copodniknout.cz" target="_blank">
+						<img src="/assets/images/copodniknout.jpg" alt="copodniknout" class="image" />
+						<div class="card_overlay">
+							<div class="card_text">CoPodniknout.cz</div>
+						</div>
+					</a>
+					<a class="portfolio_card" href="https://sevidbluehouse.cz" target="_blank">
+						<img src="/assets/images/sevidbluehouse.jpg" alt="sevidbluehouse" class="image" />
+						<div class="card_overlay">
+							<div class="card_text">SevidBlueHouse.cz</div>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section id="kontakt">
+				<h2><span>Kontakt</span></h2>
+				<p>Pracuji jako freelancer</p>
+				<!-- <form action="">
+					<input type="text" name="" id="" />
+					<input type="email" name="" id="" />
+					<input type="text" name="" id="" />
+					<input type="submit" value="" />
+				</form> -->
+				<img src="/assets/images/icons8-new-contact-64.png" alt="" srcset="">
+				<p>Pošlete mi <a href="mailto:richter.dominik@seznam.cz">email</a> 👋</p>
+				<p>richter.dominik@seznam.cz</p>
+			</section>
+
+			<footer>
+				<p>© Copyright 2020 webdom.cz - Všechna práva vyhrazena</p>
+				<a target="_blank" href="https://icons8.com/icons/set/web">Web icons</a> by <a target="_blank" href="https://icons8.com">Icons8</a>
+			</footer>
+		</div>
+
+		<script>
+			var myWave = $("#myID").wavify({
+				height: 10,
+				bones: 3,
+				amplitude: 40,
+				color: "rgb(255,255,255)",
+				speed: 0.25,
+			});
+		</script>
+		<script src="/assets/js/menu.js"></script>
+		<script src="/assets/js/typeWriter.js"></script>
+	</body>
+</html>
