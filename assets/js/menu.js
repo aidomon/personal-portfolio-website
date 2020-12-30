@@ -39,7 +39,7 @@ $(window).scroll(function () {
 		tab4.addClass("active");
 		tab5.removeClass("active");
 	}
-	if (scrollDistance > 0 && scrollDistance + 90 > tab4_height) {
+	if (scrollDistance > 0 && scrollDistance > 2350) {
 		tab4.removeClass("active");
 		tab5.addClass("active");
 	}
