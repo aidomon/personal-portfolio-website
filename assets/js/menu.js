@@ -48,13 +48,10 @@ $(window).scroll(function () {
 $(".burger_div").click(function () {
 	if ($(".burger").hasClass("toggle") == true) {
 		$(".burger").removeClass("toggle");
+		$(".submenu").removeClass("submenu_active");
 	} else {
 		$(".burger").addClass("toggle");
-	}
-	if ($(".submenu").css("transform") == "matrix(1, 0, 0, 1, 0, -318.769)") {
 		$(".submenu").addClass("submenu_active");
-	} else {
-		$(".submenu").removeClass("submenu_active");
 	}
 });
 
