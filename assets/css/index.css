@@ -26,6 +26,7 @@ h3 {
 }
 h2 > span {
 	font-weight: 700;
+	font-size: 2rem;
 }
 ::selection {
 	background: #c2c1c1; /* WebKit/Blink Browsers */
@@ -332,6 +333,12 @@ svg {
 		max-width: 100%;
 		margin: 0;
 	}
+	#o-mne > div > h3 {
+		font-size: 1.4rem;
+	}
+	#o-mne > div > h3 > span {
+		display: block;
+	}
 }
 
 /* services */
@@ -464,6 +471,9 @@ a:nth-of-type(2) > .portfolio_card {
 #kontakt img {
 	margin-top: 20px;
 }
+#kontakt > p:nth-of-type(1) {
+	margin: 10px auto 20px auto;
+}
 
 
 /* footer */
@@ -476,5 +486,6 @@ footer {
 footer > p {
 	margin-bottom: 20px;
 }
+
 
 
