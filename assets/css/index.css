@@ -148,7 +148,7 @@ h2 > span {
 /* domu */
 #domu {
 	height: 100vh;
-	background-image: url("/personal-portfolio-website/assets/images/hands_up_crop.jpg");
+	background-image: url("/assets/images/hands_up_crop.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -291,7 +291,7 @@ svg {
 
 /* about */
 #o-mne {
-	padding: 90px 15%;
+	padding: 90px 11.5%;
 	display: inline-flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
@@ -318,20 +318,28 @@ svg {
 }
 .about_content p {
 	color: #6c757d;
+	text-align: justify;
+}
+.about_content a {
+	color: #e65f78;
 }
 .about_pic {
+	transform: scale(0.9);
 	flex: 50%;
-	margin: 20px;
+	margin: 10px;
 	max-width: 50%;
 	z-index: 70;
 }
 @media (max-width: 1200px) {
 	.about_pic {
 		max-width: 100%;
+		transform: scale(1);
+		margin-bottom: 30px;
 	}
 	.about_content {
 		max-width: 100%;
 		margin: 0;
+		text-align: center;
 	}
 	#o-mne > div > h3 {
 		font-size: 1.4rem;
@@ -345,7 +353,7 @@ svg {
 #sluzby {
 	background-color: #f6f6f6;
 	text-align: center;
-	padding: 90px 15%;
+	padding: 90px 11.5%;
 }
 #slzby > h2 {
 	font-size: 2rem;
@@ -364,7 +372,7 @@ svg {
 .sluzby_card {
 	width: 300px;
 	min-height: 150px;
-	background-image: linear-gradient(180deg, rgba(255, 0, 0, 0), rgba(230, 95, 120, 0.1));
+	/* background-image: linear-gradient(180deg, rgba(255, 0, 0, 0), rgba(230, 95, 120, 0.1)); */
 	/* border-radius: 20px; */
 	padding: 30px;
 	margin: 30px auto;
@@ -385,6 +393,7 @@ svg {
 }
 .sluzby_card img {
 	margin-bottom: 20px;
+	height: 100px;
 }
 .sluzby_card h4 {
 	margin-bottom: 10px;
@@ -394,7 +403,7 @@ svg {
 #portfolio {
 	background-color: white;
 	text-align: center;
-	padding: 90px 15%;
+	padding: 90px 11.5%;
 }
 .portfolio_container {
 	display: flex;
@@ -442,24 +451,24 @@ svg {
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
 	.portfolio_card {
 		width: 100%;
 	}
 }
 
 a:nth-of-type(1) > .portfolio_card {
-	background-image: url("/personal-portfolio-website/assets/images/copodniknout.jpg");
+	background-image: url("assets/images/copodniknout.jpg");
 }
 a:nth-of-type(2) > .portfolio_card {
-	background-image: url("/personal-portfolio-website/assets/images/sevidbluehouse.jpg");
+	background-image: url("assets/images/sevidbluehouse.jpg");
 }
 
 /* kontakt */
 #kontakt {
 	background-color: #f6f6f6;
 	text-align: center;
-	padding: 90px 15%;
+	padding: 90px 11.5%;
 }
 #kontakt p > a {
 	color: #e65f78;
@@ -469,23 +478,26 @@ a:nth-of-type(2) > .portfolio_card {
 	color: #6c757d;
 }
 #kontakt img {
-	margin-top: 20px;
+	margin: 50px auto;
+	height: 130px;
 }
 #kontakt > p:nth-of-type(1) {
 	margin: 10px auto 15px auto;
 }
 
-
 /* footer */
 footer {
 	background-color: #333333;
 	text-align: center;
-	padding: 30px 15%;
+	padding: 30px 11.5%;
 	color: white;
 }
 footer > p {
-	margin-bottom: 20px;
+	margin: 20px auto;
 }
-
-
-
+footer a {
+	transition: 0.7s;
+}
+footer a:hover {
+	color: #e65f78;
+}
