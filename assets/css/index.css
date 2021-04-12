@@ -324,7 +324,6 @@ svg {
 	color: #e65f78;
 }
 .about_pic {
-	transform: scale(0.9);
 	flex: 50%;
 	margin: 10px;
 	max-width: 50%;
@@ -333,7 +332,6 @@ svg {
 @media (max-width: 1200px) {
 	.about_pic {
 		max-width: 100%;
-		transform: scale(1);
 		margin-bottom: 30px;
 	}
 	.about_content {
