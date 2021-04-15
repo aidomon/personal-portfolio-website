@@ -294,19 +294,30 @@ svg {
 	padding: 90px 11.5%;
 	display: inline-flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-around;
-	flex-direction: row;
+	/* flex-direction: row; */
+}
+.o-mne-flexcontainer {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
 }
 
-#o-mne > div > h3 > span {
+#o-mne > div > div > h3 > span {
 	color: #e65f78;
 }
-#o-mne > div > h2 {
+#o-mne h2 {
 	font-size: 2rem;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
-#o-mne > div > h3 {
+#o-mne > h2 {
+	display: none;
+	margin-bottom: 50px;
+	z-index: 80;
+}
+#o-mne > div > div > h3 {
 	font-size: 1.5rem;
 	margin-bottom: 20px;
 }
@@ -326,24 +337,46 @@ svg {
 .about_pic {
 	flex: 50%;
 	margin: 10px;
-	max-width: 50%;
+	max-width: 40%;
 	z-index: 70;
+	border-radius: 50%;
 }
 @media (max-width: 1200px) {
 	.about_pic {
-		max-width: 100%;
-		margin-bottom: 30px;
+		max-width:30%;
+		/* margin-bottom: 50px; */
 	}
 	.about_content {
-		max-width: 100%;
+		max-width: 50%;
 		margin: 0;
 		text-align: center;
 	}
-	#o-mne > div > h3 {
+	#o-mne > div > div > h3 {
 		font-size: 1.4rem;
+		margin-bottom: 50px;
 	}
-	#o-mne > div > h3 > span {
+	#o-mne > div > div > h3 > span {
 		display: block;
+	}
+}
+@media (max-width: 900px) {
+	.about_pic {
+		max-width: 60%;
+		margin-bottom: 50px;
+	}
+	.about_content {
+		max-width: 100%;
+	}
+	#o-mne > h2 {
+		display: block;
+	}
+	.about_content h2 {
+		display: none;
+	}
+}
+@media(max-width: 600px){
+	.about_pic {
+		max-width: 70%;
 	}
 }
 
@@ -395,6 +428,18 @@ svg {
 }
 .sluzby_card h4 {
 	margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+	.sluzby_card {
+		margin: 15px auto;
+	}
+	.sluzby_card img {
+		height: 90px;
+	}
+	.sluzby_card:hover {
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+		transform: scale(1.05, 1.05);
+	}
 }
 
 /* portfolio */
@@ -451,7 +496,23 @@ svg {
 }
 @media (max-width: 1200px) {
 	.portfolio_card {
-		width: 100%;
+		width: 55%;
+	}
+	.portfolio_card:nth-of-type(1) {
+		margin-bottom: 70px;
+	}
+}
+@media (max-width: 900px) {
+	.portfolio_card {
+		width: 80%;
+	}
+	.portfolio_card:nth-of-type(1) {
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 600px) {
+	.portfolio_card {
+		width: 95%;
 	}
 }
 
